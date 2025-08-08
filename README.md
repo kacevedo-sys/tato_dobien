@@ -28,10 +28,15 @@ Este proyecto simula la gestión de procesos en un sistema operativo con una mem
 
 ├── src/
 │ ├── index.ts # Punto de entrada con menú principal
+
 │ ├── Process.ts # Clase que representa un proceso
+
 │ ├── ProcessManager.ts# Controlador de la ejecución y cola de procesos
+
 ├── package.json
+
 ├── tsconfig.json
+
 └── README.md
 
 
