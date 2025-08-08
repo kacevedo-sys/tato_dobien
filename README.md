@@ -27,6 +27,7 @@ Este proyecto simula la gestión de procesos en un sistema operativo con una mem
 ## Estructura del proyecto
 
 ├── src/
+
 │ ├── index.ts # Punto de entrada con menú principal
 
 │ ├── Process.ts # Clase que representa un proceso
