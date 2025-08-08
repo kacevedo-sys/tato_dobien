@@ -84,5 +84,7 @@ Seleccione una opción:
 📊 [Kevin] (5%)  |█-------------------| Fase 1/20
 
 📊 [Carlos] (20%)|████----------------| Fase 1/5
+
 ...
+
 ✅ Todos los procesos han finalizado.
