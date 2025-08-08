@@ -1,10 +1,21 @@
 {
   "compilerOptions": {
+    // Especifica la versión de ECMAScript a la que se compilará el código (ES6 = ECMAScript 2015)
     "target": "es6",
+
+    // Define el sistema de módulos utilizado. "commonjs" es el más común en Node.js
     "module": "commonjs",
+
+    // Carpeta de salida para los archivos compilados (.js)
     "outDir": "./dist",
+
+    // Carpeta raíz donde están tus archivos fuente (.ts)
     "rootDir": "./src",
+
+    // Activa todas las comprobaciones estrictas de tipo para mayor seguridad
     "strict": true,
+
+    // Permite importar módulos de ES6 que exportan por defecto (como `import fs from 'fs'`)
     "esModuleInterop": true
   }
 }
