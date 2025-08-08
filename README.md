@@ -72,9 +72,11 @@ Seleccione una opción:
 
 🚀 Ejecutando 2 procesos...
 [START] Ejecutando Kevin (PID: 1)
+
 [START] Ejecutando Carlos (PID: 2)
 
 📊 [Kevin] (5%)  |█-------------------| Fase 1/20
+
 📊 [Carlos] (20%)|████----------------| Fase 1/5
 ...
 ✅ Todos los procesos han finalizado.
