@@ -62,14 +62,21 @@ function agregarProceso() {
         const memoria = parseInt(memoriaStr);
         const fases = parseInt(fasesStr);
 
-        // Validación básica
+        // Validación básica de memoria.
         if (isNaN(memoria) || isNaN(fases)) {
           console.log('❌ Entrada inválida. Intente de nuevo.');
           mostrarMenu();
           return;
         }
 
-        // Se crea el nuevo proceso y se agrega a la lista de pendientes
+        // Validar límite de RAM
+        if (memoria > 1024 || memoria <= 0) {
+          console.log('❌ La memoria requerida debe ser mayor a 0 y no superar 1024 MB.');
+          mostrarMenu();
+          return;
+        }
+
+        // Crear y agregar el proceso a pendientes
         const proceso = new Process(processCounter++, nombre || null, memoria, fases);
         pendingProcesses.push(proceso);
         console.log(`✅ Proceso agregado: ${proceso.name}`);
@@ -78,6 +85,7 @@ function agregarProceso() {
     });
   });
 }
+
 
 // Ejecuta todos los procesos que están pendientes
 function ejecutarProcesos() {
